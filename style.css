@@ -1,0 +1,59 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header,
+main,
+footer {
+    width: 80%;
+    background-color: #59402d34;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+header {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+button {
+    background-color: #59402d;
+    color: white;
+    font-size: 19px;
+    font-family: monospace;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px rgb(1, 24, 1);
+    margin: 30px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: lightgray;
+}
+button:active {
+    box-shadow: none;
+    position: relative;
+    top: 3px
+}
+
+p {
+    font-size: 18px;
+}
+
+img {
+    margin-bottom: 50px;
+}
