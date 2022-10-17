@@ -10,6 +10,14 @@ const getRandom = arr => {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
-// Write the message
-let message = `Your barbaric sign is ${getRandom(barbSigns)}. You ${getRandom(modal)} ${getRandom(verb)} the ${getRandom(person)} ${getRandom(time)}.`;
-console.log(message);
+// Constant "message"
+const message = () => `Your barbaric sign is ${getRandom(barbSigns)}. You ${getRandom(modal)} ${getRandom(verb)} the ${getRandom(person)} ${getRandom(time)}.`;
+
+
+// Write the message on the screen
+const paragraph = document.querySelector("#msg-paragraph");
+const button = document.querySelector("#btn-start");
+button.addEventListener("click", function() {
+    paragraph.innerText = message();
+}) 
+
